@@ -44,20 +44,7 @@ Uma plataforma inteligente de IA com múltiplas funcionalidades para transforma�
 npm install
 ```
 
-2. Configure as variáveis de ambiente:
-Crie um arquivo `.env.local` na raiz do projeto com:
-```env
-# API do Google Gemini (OBRIGATÓRIA)
-# Obtenha sua chave em: https://aistudio.google.com/apikey
-GEMINI_API_KEY=AIzaSyARk5dpYYZ6T8Rd1oYdYPsOUQOsIjodkv4
-
-# URL da API Gemini (OBRIGATÓRIA)
-GEMINI_API_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
-```
-
-**Arquivo pronto para copiar:** Veja o arquivo `ENV_EXAMPLE.txt` na raiz do projeto.
-
-**Nota:** O sistema usa exclusivamente a API do Google Gemini. Ambas as variáveis são obrigatórias.
+2. Configure as variáveis de ambiente no arquivo `.env.local` na raiz do projeto.
 
 3. Execute o projeto:
 ```bash

@@ -15,20 +15,7 @@ npm install
 
 ### 2. Configurar Variáveis de Ambiente
 
-Crie um arquivo `.env.local` na raiz do projeto:
-
-```env
-# API do Google Gemini (OBRIGATÓRIA)
-# Obtenha sua chave em: https://aistudio.google.com/apikey
-GEMINI_API_KEY=AIzaSyARk5dpYYZ6T8Rd1oYdYPsOUQOsIjodkv4
-
-# URL da API Gemini (OBRIGATÓRIA)
-GEMINI_API_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
-```
-
-**Importante:** 
-- O sistema usa exclusivamente a API do Google Gemini
-- Ambas as variáveis (`GEMINI_API_KEY` e `GEMINI_API_URL`) são obrigatórias
+Configure as variáveis de ambiente no arquivo `.env.local` na raiz do projeto.
 
 ### 3. Executar o Projeto
 
@@ -74,9 +61,7 @@ Abra seu navegador em: `http://localhost:3000`
 - Certifique-se de estar usando Node.js 18+
 
 ### Erro: "GEMINI_API_KEY não configurada"
-- Verifique se o arquivo `.env.local` existe
-- Certifique-se de que `GEMINI_API_KEY` está configurada
-- Certifique-se de que `GEMINI_API_URL` está configurada
+- Verifique se o arquivo `.env.local` existe e está configurado corretamente
 - Reinicie o servidor após criar/editar o `.env.local`
 
 ### Erro ao processar PDF
