@@ -13,7 +13,7 @@ export default function MobileMenu({ activeTab, setActiveTab, tabs }: MobileMenu
   const { t } = useLanguage()
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-primary-800/90 backdrop-blur-md border-t border-primary-700 z-40">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-gray-950 backdrop-blur-md border-t border-gray-800 z-40 shadow-lg">
       <div className="overflow-x-auto">
         <div className="flex gap-2 px-2 py-2 min-w-max">
           {tabs.map((tab) => {
@@ -26,8 +26,8 @@ export default function MobileMenu({ activeTab, setActiveTab, tabs }: MobileMenu
                   flex flex-col items-center gap-1 px-4 py-2 rounded-lg font-medium transition-all duration-200 min-w-[80px]
                   ${
                     activeTab === tab.id
-                      ? 'bg-primary-600 text-white shadow-lg'
-                      : 'bg-primary-700/50 text-primary-100 hover:bg-primary-600 hover:text-white border border-primary-600'
+                      ? 'bg-gray-800 text-white shadow-md'
+                      : 'bg-transparent text-white hover:bg-gray-800'
                   }
                 `}
               >

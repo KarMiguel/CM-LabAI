@@ -18,7 +18,7 @@ export default function Navigation() {
   const currentLanguage = languages.find(l => l.code === language) || languages[0]
 
   return (
-    <nav className="bg-primary-800/90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-primary-700">
+    <nav className="bg-gray-950 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-gray-800">
       <div className="container mx-auto px-4 py-3 max-w-full">
         <div className="flex items-center justify-between">
           {/* Logo e Título */}
@@ -37,7 +37,7 @@ export default function Navigation() {
                 e.stopPropagation()
                 setShowLanguageMenu(!showLanguageMenu)
               }}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-700/50 text-primary-100 hover:bg-primary-600 hover:text-white border border-primary-600 transition-all"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-800 text-white hover:bg-gray-700 border border-gray-700 transition-all shadow-sm"
             >
               <FlagIcon country={currentLanguage.flag} size={24} />
               <span className="hidden md:inline text-sm font-medium">
@@ -51,7 +51,7 @@ export default function Navigation() {
                   className="fixed inset-0 z-40"
                   onClick={() => setShowLanguageMenu(false)}
                 />
-                <div className="absolute right-0 mt-2 bg-primary-800 border border-primary-600 rounded-lg shadow-xl z-50 min-w-[160px] overflow-hidden">
+                <div className="absolute right-0 mt-2 bg-gray-950 border border-gray-800 rounded-lg shadow-xl z-50 min-w-[160px] overflow-hidden">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -62,8 +62,11 @@ export default function Navigation() {
                         setShowLanguageMenu(false)
                       }}
                       className={`
-                        w-full flex items-center gap-2 px-4 py-2 hover:bg-primary-700 transition-colors text-left
-                        ${language === lang.code ? 'bg-primary-700 text-primary-200' : 'text-primary-100'}
+                        w-full flex items-center gap-2 px-4 py-2 hover:bg-gray-800 transition-colors text-left
+                        ${language === lang.code 
+                          ? 'bg-gray-800 text-white' 
+                          : 'text-white'
+                        }
                         first:rounded-t-lg last:rounded-b-lg
                       `}
                     >

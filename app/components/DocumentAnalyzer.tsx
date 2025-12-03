@@ -67,21 +67,21 @@ export default function DocumentAnalyzer() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="bg-primary-800/50 rounded-lg p-6 mb-6">
+      <div className="bg-gray-900 rounded-xl p-6 mb-6 shadow-lg border border-gray-800">
         <h2 className="text-2xl font-bold text-white mb-2">
-          {t('documentAnalysis.title')}
+          {t('documentAnalysis.titleDocumentAnalysis')}
         </h2>
-        <p className="text-primary-200">
+        <p className="text-gray-300">
           {t('documentAnalysis.description')}
         </p>
       </div>
 
-      <div className="bg-primary-800/50 rounded-lg p-6 mb-6">
+      <div className="bg-gray-900 rounded-xl p-6 mb-6 shadow-lg border border-gray-800">
         <div className="mb-4">
-          <label className="block text-primary-100 mb-2 font-medium">
+          <label className="block text-white mb-2 font-semibold">
             {t('documentAnalysis.fileLabel')}
           </label>
-          <label className="flex items-center gap-2 px-4 py-2 bg-primary-700 hover:bg-primary-600 rounded-lg cursor-pointer transition-colors text-primary-100">
+          <label className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer transition-colors text-white">
             <Upload size={20} />
             <span>{t('documentAnalysis.filePlaceholder')}</span>
             <input
@@ -92,16 +92,16 @@ export default function DocumentAnalyzer() {
             />
           </label>
           {file && (
-            <p className="text-primary-200 text-sm mt-2">{file.name}</p>
+            <p className="text-gray-300 text-sm mt-2">{file.name}</p>
           )}
         </div>
 
         <div className="mb-4">
-          <label className="block text-primary-100 mb-2 font-medium">Operação:</label>
+          <label className="block text-white mb-2 font-semibold">Operação:</label>
           <select
             value={operation}
             onChange={(e) => setOperation(e.target.value as Operation)}
-            className="w-full px-4 py-2 bg-primary-700 text-primary-100 rounded-lg border border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="w-full px-4 py-2 bg-gray-950 text-white rounded-lg border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
           >
             <option value="extract">{t('documentAnalysis.operations.extract.label')}</option>
             <option value="classify">{t('documentAnalysis.operations.classify.label')}</option>
@@ -113,32 +113,31 @@ export default function DocumentAnalyzer() {
         <button
           onClick={handleAnalyze}
           disabled={!file || loading}
-          className="w-full px-6 py-3 bg-primary-600 hover:bg-primary-500 disabled:bg-primary-700 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-colors"
+          className="w-full px-6 py-3 bg-blue-500 hover:bg-blue-400 disabled:bg-gray-900 disabled:cursor-not-allowed text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 ring-2 ring-blue-400/50 hover:ring-blue-300/50"
         >
           {loading ? t('common.loading') : t('documentAnalysis.button')}
         </button>
       </div>
 
       {result && (
-        <div className="bg-primary-800/50 rounded-lg p-6">
+        <div className="bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-xl font-bold text-white">
               {t('documentAnalysis.resultLabel')}
             </h3>
             <button
               onClick={handleCopy}
-              className="flex items-center gap-2 px-3 py-1 bg-primary-700 hover:bg-primary-600 text-primary-100 rounded-lg text-sm transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-medium transition-all shadow-md hover:shadow-lg ring-1 ring-blue-400/30"
             >
               {copied ? <CheckCircle size={16} /> : <Copy size={16} />}
               {copied ? t('common.copied') : t('common.copy')}
             </button>
           </div>
-          <div className="bg-primary-900/50 rounded-lg p-4 max-h-96 overflow-y-auto">
-            <p className="text-primary-100 whitespace-pre-wrap">{result}</p>
+          <div className="bg-gray-950 rounded-lg p-4 max-h-96 overflow-y-auto border border-gray-800">
+            <p className="text-white whitespace-pre-wrap leading-relaxed">{result}</p>
           </div>
         </div>
       )}
     </div>
   )
 }
-

@@ -25,12 +25,12 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-primary-900">
+    <div className="min-h-screen bg-gray-950">
       <Navigation />
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
       <MobileMenu activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
       
-      <main className="lg:ml-64 pt-4 px-4 lg:px-6 pb-20 lg:pb-4">
+      <main className="lg:ml-64 pt-20 lg:pt-4 px-4 lg:px-6 pb-20 lg:pb-4">
         <div className="max-w-6xl mx-auto">
           {activeTab === 'text' && <TextTransformer />}
           {activeTab === 'documents' && <DocumentAnalyzer />}

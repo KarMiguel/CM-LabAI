@@ -1,0 +1,27 @@
+<svg
+  width="32"
+  height="32"
+  viewBox="0 0 32 32"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="32" height="32" rx="6" fill="#075985"/>
+  <path
+    d="M16 6 L20 6 L20 8 L22 8 L22 26 L20 28 L12 28 L10 26 L10 8 L12 8 L12 6 Z"
+    fill="none"
+    stroke="#ffffff"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M10 26 L22 26"
+    stroke="#ffffff"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+  />
+  <rect x="13" y="12" width="2" height="4" rx="1" fill="#ffffff" opacity="0.9" />
+  <rect x="15" y="11" width="2" height="5" rx="1" fill="#ffffff" opacity="0.9" />
+  <rect x="17" y="12" width="2" height="4" rx="1" fill="#ffffff" opacity="0.9" />
+</svg>
+
