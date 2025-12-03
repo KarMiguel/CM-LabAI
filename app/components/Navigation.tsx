@@ -1,17 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { TabType } from '../page'
 import { useLanguage } from '../contexts/LanguageContext'
 import FlagIcon from './FlagIcon'
+import Logo from './Logo'
 
-interface NavigationProps {
-  activeTab: TabType
-  setActiveTab: (tab: TabType) => void
-  tabs: Array<{ id: TabType; labelKey: string; icon: any }>
-}
-
-export default function Navigation({ activeTab, setActiveTab, tabs }: NavigationProps) {
+export default function Navigation() {
   const { t, language, setLanguage } = useLanguage()
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
 
@@ -25,32 +19,18 @@ export default function Navigation({ activeTab, setActiveTab, tabs }: Navigation
 
   return (
     <nav className="bg-primary-800/90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-primary-700">
-      <div className="container mx-auto px-4 py-4 max-w-7xl">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex flex-wrap gap-2 justify-center items-center flex-1 pr-4 md:pr-0">
-            {tabs.map((tab) => {
-              const Icon = tab.icon
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`
-                    flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200
-                    ${
-                      activeTab === tab.id
-                        ? 'bg-primary-600 text-white shadow-lg scale-105'
-                        : 'bg-primary-700/50 text-primary-100 hover:bg-primary-600 hover:text-white border border-primary-600'
-                    }
-                  `}
-                >
-                  <Icon size={20} />
-                  <span className="hidden sm:inline">{t(`nav.${tab.labelKey}`)}</span>
-                </button>
-              )
-            })}
+      <div className="container mx-auto px-4 py-3 max-w-full">
+        <div className="flex items-center justify-between">
+          {/* Logo e Título */}
+          <div className="flex items-center gap-3">
+            <Logo />
+            <h1 className="text-xl font-bold text-white">
+              {t('home.title')}
+            </h1>
           </div>
 
-          <div className="relative flex-shrink-0">
+          {/* Seletor de Idioma */}
+          <div className="relative">
             <button
               type="button"
               onClick={(e) => {
@@ -100,4 +80,3 @@ export default function Navigation({ activeTab, setActiveTab, tabs }: Navigation
     </nav>
   )
 }
-

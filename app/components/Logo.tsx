@@ -2,33 +2,40 @@
 
 export default function Logo() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center gap-3">
       <div className="relative">
-        <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center shadow-lg">
+        <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
           <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="text-white"
           >
+            {/* Frasco de laboratório */}
             <path
-              d="M20 8L28 16L20 24L12 16L20 8Z"
-              fill="currentColor"
-              opacity="0.9"
+              d="M16 4 L20 4 L20 6 L22 6 L22 24 L20 26 L12 26 L10 24 L10 6 L12 6 L12 4 Z"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-            <circle cx="20" cy="20" r="6" fill="currentColor" opacity="0.6" />
+            {/* Base do frasco */}
             <path
-              d="M20 14L24 18L20 22L16 18L20 14Z"
-              fill="currentColor"
-              opacity="0.4"
+              d="M10 24 L22 24"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
             />
+            {/* Componentes eletrônicos dentro do frasco */}
+            <rect x="13" y="10" width="2" height="4" rx="1" fill="currentColor" opacity="0.8" />
+            <rect x="15" y="9" width="2" height="5" rx="1" fill="currentColor" opacity="0.8" />
+            <rect x="17" y="10" width="2" height="4" rx="1" fill="currentColor" opacity="0.8" />
           </svg>
         </div>
-        <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary-400 rounded-full animate-pulse"></div>
       </div>
     </div>
   )
 }
-

@@ -1,21 +1,20 @@
 'use client'
 
 import { useState } from 'react'
-import Logo from './components/Logo'
 import Navigation from './components/Navigation'
+import Sidebar from './components/Sidebar'
+import MobileMenu from './components/MobileMenu'
 import TextTransformer from './components/TextTransformer'
 import DocumentAnalyzer from './components/DocumentAnalyzer'
 import TechnicalChat from './components/TechnicalChat'
 import IntelligentAutomation from './components/IntelligentAutomation'
 import AudioTranslator from './components/AudioTranslator'
-import { useLanguage } from './contexts/LanguageContext'
 import { Sparkles, FileText, MessageSquare, Zap, Headphones } from 'lucide-react'
 
 export type TabType = 'text' | 'documents' | 'chat' | 'automation' | 'audio'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabType>('text')
-  const { t } = useLanguage()
 
   const tabs = [
     { id: 'text' as TabType, labelKey: 'textTransform', icon: Sparkles },
@@ -27,19 +26,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-primary-900">
-      <Navigation activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+      <Navigation />
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+      <MobileMenu activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
       
-      <main className="container mx-auto px-4 py-8 max-w-7xl">
-        <div className="mb-8 text-center">
-          <div className="flex justify-center mb-4">
-            <Logo />
-          </div>
-          <p className="text-xl text-primary-200 mt-4">
-            {t('home.subtitle')}
-          </p>
-        </div>
-
-        <div className="mt-8">
+      <main className="lg:ml-64 pt-4 px-4 lg:px-6 pb-20 lg:pb-4">
+        <div className="max-w-6xl mx-auto">
           {activeTab === 'text' && <TextTransformer />}
           {activeTab === 'documents' && <DocumentAnalyzer />}
           {activeTab === 'chat' && <TechnicalChat />}
