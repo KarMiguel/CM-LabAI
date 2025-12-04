@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "textTransform": "Transformación de Texto",
+    "documentAnalysis": "Análisis de Documentos",
+    "technicalChat": "Chat IA Especializado",
+    "intelligentAutomation": "Automatización Inteligente",
+    "audioTranslate": "Traducción de Audio"
+  },
+  "common": {
+    "loading": "Procesando...",
+    "analyzing": "Analizando documento...",
+    "thinking": "Pensando...",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "error": "Error",
+    "success": "Éxito",
+    "send": "Enviar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "download": "Descargar"
+  },
+  "home": {
+    "title": "CM LabAi",
+    "subtitle": "Plataforma Inteligente de IA para Transformación y Análisis"
+  },
+  "textTransform": {
+    "title": "Resumen y Transformación Inteligente de Texto",
+    "description": "Transforma tus textos de forma inteligente con IA",
+    "operations": {
+      "summarize": {
+        "label": "Resumir",
+        "description": "Resume textos largos de forma clara"
+      },
+      "improve": {
+        "label": "Mejorar Escritura",
+        "description": "Mejora gramática y estilo"
+      },
+      "commit": {
+        "label": "Generar Commit",
+        "description": "Crea mensajes de commit profesionales"
+      },
+      "translate": {
+        "label": "Traducir",
+        "description": "Traduce textos manteniendo contexto"
+      },
+      "reorganize": {
+        "label": "Reorganizar",
+        "description": "Reorganiza estructura del texto"
+      }
+    },
+    "inputLabel": "Ingresa tu texto:",
+    "inputPlaceholder": "Pega o escribe el texto que deseas transformar...",
+    "button": "Transformar Texto",
+    "resultLabel": "Resultado:",
+    "copyResult": "📋 Copiar resultado"
+  },
+  "documentAnalysis": {
+    "titleDocumentAnalysis": "Análisis de Documento",
+    "description": "Analiza PDFs con IA para extraer, clasificar y verificar información",
+    "operations": {
+      "extract": {
+        "label": "Extraer Datos",
+        "description": "Extrae información importante"
+      },
+      "classify": {
+        "label": "Clasificar",
+        "description": "Clasifica por tipo y categoría"
+      },
+      "find": {
+        "label": "Encontrar Info",
+        "description": "Encuentra información específica"
+      },
+      "verify": {
+        "label": "Verificar",
+        "description": "Verifica inconsistencias"
+      }
+    },
+    "fileLabel": "Selecciona un archivo PDF:",
+    "filePlaceholder": "Haz clic para subir PDF",
+    "fileHint": "Solo se admiten archivos PDF",
+    "button": "Analizar Documento",
+    "metadataTitle": "Información del Documento:",
+    "pages": "Páginas",
+    "title": "Título",
+    "resultLabel": "Resultado del Análisis:",
+    "copyAnalysis": "📋 Copiar análisis"
+  },
+  "technicalChat": {
+    "title": "Chat IA Especializado (Asistente Técnico)",
+    "description": "Conversa con un asistente técnico especializado en programación y desarrollo",
+    "contextLabel": "Contexto (opcional - código, documentación, etc.):",
+    "contextPlaceholder": "Pega código, documentación o contexto relevante aquí...",
+    "inputPlaceholder": "Escribe tu pregunta o describe tu problema técnico...",
+    "tips": {
+      "explainCode": {
+        "title": "Explicar Código",
+        "description": "Pega código y pide explicaciones"
+      },
+      "solveProblems": {
+        "title": "Resolver Problemas",
+        "description": "Describe errores y bugs"
+      },
+      "interpretDocs": {
+        "title": "Interpretar Docs",
+        "description": "Entiende documentación técnica"
+      }
+    }
+  },
+  "automation": {
+    "title": "Automatización Inteligente",
+    "description": "Automatiza tareas repetitivas y genera contenido de forma inteligente",
+    "types": {
+      "text": {
+        "label": "Generar Textos",
+        "description": "Genera textos automáticamente"
+      },
+      "commit": {
+        "label": "Crear Commits",
+        "description": "Automatiza mensajes de commit"
+      },
+      "organize": {
+        "label": "Organizar Contenido",
+        "description": "Organiza contenido automáticamente"
+      },
+      "pattern": {
+        "label": "Crear Patrones",
+        "description": "Genera patrones y templates"
+      }
+    },
+    "taskLabel": "Tipo de tarea (opcional):",
+    "taskPlaceholder": "Ej: email de presentación, descripción de API, README...",
+    "inputLabel": "Input / Contenido:",
+    "inputPlaceholder": "Pega o escribe el contenido...",
+    "button": "Ejecutar Automatización",
+    "resultLabel": "Resultado:",
+    "copyResult": "📋 Copiar resultado",
+    "examples": {
+      "title": "💡 Ejemplos de uso:",
+      "text": "• Generar Textos: \"Crea un email profesional presentando nuestro producto\"",
+      "commit": "• Crear Commits: Pega los cambios y genera mensajes de commit automáticamente",
+      "organize": "• Organizar: Pega contenido desorganizado y deja que la IA lo estructure",
+      "pattern": "• Patrones: \"Crea un template de componente React con TypeScript\""
+    }
+  },
+  "audioTranslate": {
+    "title": "Traducción Inteligente de Audio",
+    "description": "Sube un archivo de audio y obtén transcripción y traducción automática",
+    "fileLabel": "Selecciona un archivo de audio:",
+    "selectFile": "Seleccionar Archivo",
+    "fileHint": "Formatos soportados: MP3, WAV, OGG, M4A, WEBM",
+    "targetLanguage": "Idioma de Destino:",
+    "button": "Transcribir y Traducir",
+    "transcriptionLabel": "Transcripción del Audio Original:",
+    "translationLabel": "Traducción:",
+    "audioPreview": "Vista previa del audio",
+    "errors": {
+      "noFile": "Por favor, selecciona un archivo de audio",
+      "invalidFile": "Por favor, selecciona un archivo de audio válido (MP3, WAV, OGG, M4A, WEBM)"
+    }
+  },
+  "errors": {
+    "error": "Error",
+    "noText": "Por favor, ingresa un texto",
+    "noFile": "Por favor, selecciona un archivo PDF",
+    "invalidFile": "Por favor, selecciona un archivo PDF válido",
+    "noMessage": "Por favor, escribe un mensaje",
+    "processingError": "Error al procesar solicitud",
+    "apiError": "Error al conectar con la API",
+    "download": "Descargar"
+  }
+}

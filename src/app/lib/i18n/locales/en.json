@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "textTransform": "Text Transformation",
+    "documentAnalysis": "Document Analysis",
+    "technicalChat": "Technical Chat",
+    "intelligentAutomation": "Intelligent Automation",
+    "audioTranslate": "Audio Translation"
+  },
+  "common": {
+    "loading": "Processing...",
+    "analyzing": "Analyzing document...",
+    "thinking": "Thinking...",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "error": "Error",
+    "success": "Success",
+    "send": "Send",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "download": "Download"
+  },
+  "home": {
+    "title": "CM LabAi",
+    "subtitle": "Intelligent AI Platform for Transformation and Analysis"
+  },
+  "textTransform": {
+    "title": "Intelligent Text Summary and Transformation",
+    "description": "Transform your texts intelligently with AI",
+    "operations": {
+      "summarize": {
+        "label": "Summarize",
+        "description": "Summarizes long texts clearly"
+      },
+      "improve": {
+        "label": "Improve Writing",
+        "description": "Improves grammar and style"
+      },
+      "commit": {
+        "label": "Generate Commit",
+        "description": "Creates professional commit messages"
+      },
+      "translate": {
+        "label": "Translate",
+        "description": "Translates texts maintaining context"
+      },
+      "reorganize": {
+        "label": "Reorganize",
+        "description": "Reorganizes text structure"
+      }
+    },
+    "inputLabel": "Enter your text:",
+    "inputPlaceholder": "Paste or type the text you want to transform...",
+    "button": "Transform Text",
+    "resultLabel": "Result:",
+    "copyResult": "📋 Copy result"
+  },
+  "documentAnalysis": {
+    "titleDocumentAnalysis": "Document Analysis",
+    "description": "Analyze PDFs with AI to extract, classify and verify information",
+    "operations": {
+      "extract": {
+        "label": "Extract Data",
+        "description": "Extracts important information"
+      },
+      "classify": {
+        "label": "Classify",
+        "description": "Classifies by type and category"
+      },
+      "find": {
+        "label": "Find Info",
+        "description": "Finds specific information"
+      },
+      "verify": {
+        "label": "Verify",
+        "description": "Verifies inconsistencies"
+      }
+    },
+    "fileLabel": "Select a PDF file:",
+    "filePlaceholder": "Click to upload PDF",
+    "fileHint": "Only PDF files are supported",
+    "button": "Analyze Document",
+    "metadataTitle": "Document Information:",
+    "pages": "Pages",
+    "title": "Title",
+    "resultLabel": "Analysis Result:",
+    "copyAnalysis": "📋 Copy analysis"
+  },
+  "technicalChat": {
+    "title": "Specialized AI Chat (Technical Assistant)",
+    "description": "Chat with a technical assistant specialized in programming and development",
+    "contextLabel": "Context (optional - code, documentation, etc.):",
+    "contextPlaceholder": "Paste code, documentation or relevant context here...",
+    "inputPlaceholder": "Type your question or describe your technical problem...",
+    "tips": {
+      "explainCode": {
+        "title": "Explain Code",
+        "description": "Paste code and ask for explanations"
+      },
+      "solveProblems": {
+        "title": "Solve Problems",
+        "description": "Describe errors and bugs"
+      },
+      "interpretDocs": {
+        "title": "Interpret Docs",
+        "description": "Understand technical documentation"
+      }
+    }
+  },
+  "automation": {
+    "title": "Intelligent Automation",
+    "description": "Automate repetitive tasks and generate content intelligently",
+    "types": {
+      "text": {
+        "label": "Generate Texts",
+        "description": "Generates texts automatically"
+      },
+      "commit": {
+        "label": "Create Commits",
+        "description": "Automates commit messages"
+      },
+      "organize": {
+        "label": "Organize Content",
+        "description": "Organizes content automatically"
+      },
+      "pattern": {
+        "label": "Create Patterns",
+        "description": "Generates patterns and templates"
+      }
+    },
+    "taskLabel": "Task type (optional):",
+    "taskPlaceholder": "Ex: presentation email, API description, README...",
+    "inputLabel": "Input / Content:",
+    "inputPlaceholder": "Paste or type the content...",
+    "button": "Execute Automation",
+    "resultLabel": "Result:",
+    "copyResult": "📋 Copy result",
+    "examples": {
+      "title": "💡 Usage examples:",
+      "text": "• Generate Texts: \"Create a professional email presenting our product\"",
+      "commit": "• Create Commits: Paste changes and generate commit messages automatically",
+      "organize": "• Organize: Paste disorganized content and let AI structure it",
+      "pattern": "• Patterns: \"Create a React component template with TypeScript\""
+    }
+  },
+  "audioTranslate": {
+    "title": "Intelligent Audio Translation",
+    "description": "Upload an audio file and get automatic transcription and translation",
+    "fileLabel": "Select an audio file:",
+    "selectFile": "Select File",
+    "fileHint": "Supported formats: MP3, WAV, OGG, M4A, WEBM",
+    "targetLanguage": "Target Language:",
+    "button": "Transcribe and Translate",
+    "transcriptionLabel": "Audio Transcription:",
+    "translationLabel": "Translation:",
+    "audioPreview": "Audio preview",
+    "errors": {
+      "noFile": "Please select an audio file",
+      "invalidFile": "Please select a valid audio file (MP3, WAV, OGG, M4A, WEBM)"
+    }
+  },
+  "errors": {
+    "error": "Error",
+    "noText": "Please enter a text",
+    "noFile": "Please select a PDF file",
+    "invalidFile": "Please select a valid PDF file",
+    "noMessage": "Please type a message",
+    "processingError": "Error processing request",
+    "apiError": "Error connecting to API",
+    "download": "Download"
+  }
+}
